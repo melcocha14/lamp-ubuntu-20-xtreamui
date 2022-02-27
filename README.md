@@ -11,7 +11,10 @@ La instalacion te pidira un usuario para phpmyadmin (no user root o ROOT)
 
 Te pedira 2 contraseñas una para usuario de php y la otra contraseña root de mariadb
 
-Puedes generar tus contraseñas desde esta web
+Puedes generar tus contraseñas desde esta web no uses el caracter & en el password Rl&FxUP3wcqZ
+
+si lo usas te dara un error la instalacion del panel main
+
 https://www.lastpass.com/es/features/password-generator
 
 # Comandos de instalacion
