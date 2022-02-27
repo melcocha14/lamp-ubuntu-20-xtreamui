@@ -15,13 +15,15 @@ Puedes generar tus contraseñas desde esta web
 https://www.lastpass.com/es/features/password-generator
 
 # Comandos de instalacion
-1 sudo su
+Usaremos 4 comandos
 
-2 wget https://raw.githubusercontent.com/melcocha14/lamp-ubuntu-20-xtreamui/main/lamp-ubuntu20.sh
+sudo su
 
-3 chmod +x lamp-ubuntu20.sh
+wget https://raw.githubusercontent.com/melcocha14/lamp-ubuntu-20-xtreamui/main/lamp-ubuntu20.sh
 
-4 ./lamp-ubuntu20.sh
+chmod +x lamp-ubuntu20.sh
+
+./lamp-ubuntu20.sh
 
 
 
@@ -29,3 +31,17 @@ Cuando Termines de hacer la instalacion. usa este comando para instalar el panel
 
 
 chattr -i /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb && rm -rf /home/xtreamcodes/iptv_xtream_codes/admin && rm -rf /home/xtreamcodes/iptv_xtream_codes/pytools && wget "https://raw.githubusercontent.com/melcocha14/lamp-ubuntu-20-xtreamui/main/tools/release_22f.zip" -O /tmp/update.zip -o /dev/null && unzip /tmp/update.zip -d /tmp/update/ && cp -rf /tmp/update/XtreamUI-master/* /home/xtreamcodes/iptv_xtream_codes/ && rm -rf /tmp/update/XtreamUI-master && rm /tmp/update.zip && rm -rf /tmp/update && chattr +i /home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb && chown -R xtreamcodes:xtreamcodes /home/xtreamcodes/ && chmod +x /home/xtreamcodes/iptv_xtream_codes/permissions.sh && /home/xtreamcodes/iptv_xtream_codes/permissions.sh && /home/xtreamcodes/iptv_xtream_codes/start_services.sh
+
+
+
+# Comandos para instalar Balancer
+
+sudo su
+
+apt install python2
+
+wget https://raw.githubusercontent.com/melcocha14/lamp-ubuntu-20-xtreamui/main/tools/install.py
+
+python2 install.py
+
+En el siguiente menu selecciona LB
