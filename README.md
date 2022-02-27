@@ -8,15 +8,21 @@ Actualizacion de nginx 1.20.2 con ssl 3.0.1
 
 
 La instalacion te pidira un usuario para phpmyadmin (no user root o ROOT)
+
 Te pedira 2 contraseñas una para usuario de php y la otra contraseña root de mariadb
+
 Puedes generar tus contraseñas desde esta web
 https://www.lastpass.com/es/features/password-generator
 
 # Comandos de instalacion
 1 sudo su
+
 2 wget https://raw.githubusercontent.com/melcocha14/lamp-ubuntu-20-xtreamui/main/lamp-ubuntu20.sh
+
 3 chmod +x lamp-ubuntu20.sh
+
 4 ./lamp-ubuntu20.sh
+
 
 
 Cuando Termines de hacer la instalacion. usa este comando para instalar el panel de administracion
